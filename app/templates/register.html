@@ -1,0 +1,49 @@
+
+{% extends 'mainBase.html' %}
+
+
+{% block addButtons %}
+    <div id="div-account">
+        <div style="display: flex; align-items: center;">
+            <div id="div-img-account">
+                <img id="img-account" src="{{url_for('static', filename='images/account.png')}}">
+            </div>
+                <a href="/login">Login</a>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block mainPlace %}
+    <div id="login-block">
+        <label id="header-login-block">Please, sign up!</label>
+        <div id="div-warnings">
+            <div v-if="warningMessages.length > 0" class="login-warning">
+                <label v-for="message in warningMessages" class="flashed-message">[[message]]</label>
+            </div>
+        </div>
+        <div id="login-form">
+            <table style="width: 100%;">
+                <tr class="space">
+                    <td><label class="login-item">Username: </label></td>
+                    <td><input class="login-input" type="text" name="login" placeholder="Username"></td>
+                </tr>
+                <tr class="space">
+                    <td><label class="login-item">Password: </label></td>
+                    <td><input class="login-input" type="password" name="password" placeholder="Password"></td>
+                </tr>
+                <tr class="space">
+                    <td><label class="login-item">Password 2: </label></td>
+                    <td><input class="login-input" type="password" name="password2" placeholder="Password"></td>
+                </tr>
+                <tr class="space">
+                    <td colspan="2"><input type="submit" class="enter-submit" id="register-submit" value="Login" ></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{url_for('static', filename='js/register.js')}}"></script>
+{% endblock %}

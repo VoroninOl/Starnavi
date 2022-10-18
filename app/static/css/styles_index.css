@@ -1,0 +1,92 @@
+
+
+/* Disable view of scroll */
+::-webkit-scrollbar {
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+.element { -ms-overflow-style: none; }
+.element { overflow: -moz-scrollbars-none; }
+
+
+
+#div-posts-box{
+    position: absolute;
+    height: 605px;
+    left: 7.4%;
+    right: 7.4%;
+    top: 168px;
+    background: #C9E7F9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+#header-posts-box{
+    position: absolute;
+    left: calc(50% - 179px/2 + 0.5px);
+    top: 14px;
+    width: 179px;
+    height: 39px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+#div-posts-content{
+    overflow-y: scroll;
+    overflow-anchor: revert;
+    position: absolute;
+    height: 500px;
+    left: 5.2%;
+    right: 5.2%;
+    top: 73px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-post{
+    position: relative;
+    left: 0;
+    top: 0px;
+    width: 95%;
+    display: inline-grid;
+    background: #FEF8ED;
+    border-radius: 50px;
+    padding: 12px;
+    margin: 10px;
+}
+
+.post-text label{
+    font-weight: 1000;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.div-post .author{
+    position: absolute;
+    right: 40px;
+}
+
+.div-post .date{
+    margin-left: 20px;
+}
+
+
+.btn-l{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.like{
+    background: #FEF8ED;
+}
+
+.unlike{
+    background: #C9E7F9;
+}
+
+.btn-l img{
+    width: 90%;
+}
+

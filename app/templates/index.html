@@ -1,0 +1,39 @@
+{% extends 'mainBase.html' %}
+
+{% block libs %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles_index.css')}}">
+{% endblock %}
+
+{% block addButtons %}
+    <div id="div-account">
+        <div style="display: flex; align-items: center;">
+            <div id="div-img-account">
+                <img id="img-account" src="{{url_for('static', filename='images/account.png')}}">
+            </div>
+                <label>Account</label>
+                <img class="dropdown-arrow" src="{{url_for('static', filename='images/arrow-down.png')}}">
+        </div>
+        <div id="dropdown-account">
+            <label id="username">{{username}}</label>
+            <a href="/create_post">Create Post</a>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block mainPlace %}
+    <div id="div-posts-box">
+        <label id="header-posts-box">All posts</label>
+        <div id="div-posts-content">
+            <div v-for="post in posts" class="div-post">
+                {% include 'components/x-post.html' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block scripts %}
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+{% endblock %}

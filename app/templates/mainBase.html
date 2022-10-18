@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    {% block libs %}{% endblock %}
+</head>
+<body style="background-color: #FEF8ED">
+    <!-- Block for header -->
+    <div id="header" class="bg-dark text-light">
+        <div id="logo">
+            <div id="div-logo-img">
+                <img src="{{url_for('static', filename='images/chat.png')}}">
+            </div>
+            <label id="header-label">StarNavi Task</label>
+        </div>
+        <div id="div-info">
+            <div>
+                <label>Information</label>
+                <img class="dropdown-arrow" src="{{url_for('static', filename='images/arrow-down.png')}}">
+            </div>
+            <div id="dropdown-info">
+                <p>Hi! You joined post news!</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolore nisi accusamus dolorum repellat deleniti debitis 
+                    neque corrupti ex rerum, ducimus quisquam dolor quis at 
+                    illo voluptate, consectetur nulla ipsum natus!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolore nisi accusamus dolorum repellat deleniti debitis 
+                    neque corrupti ex rerum, ducimus quisquam dolor quis at 
+                    illo voluptate, consectetur nulla ipsum natus!
+                </p>
+            </div>
+        </div>
+        {% block addButtons %}{% endblock %}
+    </div>
+    <!--  Main div -->
+
+    <div>
+        {% block mainPlace %}{% endblock %}
+    </div>
+
+    <!-- Block for bottom -->
+    <div id="bottom">
+        <div id="div-authors">
+            <label class="bottom-header">Authors</label>
+            <label id="first-author" class="bottom-label">Oleksii Voronin</label>
+        </div>
+        <div id="div-code">
+            <label class="bottom-header">Code</label>
+            <div>
+                <img src="{{url_for('static', filename='images/github.png')}}">
+                <a class="bottom-label" href="https://github.com/VoroninOl/Starnavi">https://github.com/VoroninOl/Starnavi</a>
+            </div>
+            <div>
+                <img src="{{url_for('static', filename='images/heroku.png')}}">
+                <a class="bottom-label" href="https://starnavi-task.herokuapp.com/">https://starnavi-task.herokuapp.com/</a>
+            </div>
+        </div>
+        <div id="div-contacts">
+            <label class="bottom-header">Contacts</label>
+            <div>
+                <img src="{{url_for('static', filename='images/gmail.png')}}">
+                <label class="bottom-label">rimlan1245@gmail.com</label>
+            </div>
+            <div>
+                <img src="{{url_for('static', filename='images/telegram.png')}}">
+                <label class="bottom-label">@Rimlan</label>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Importing JS scripts -->
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+
+
+<div class="div-post">
+    <div class="post-text">
+        <label>[[post.header]]</label>
+        <p>[[post.content]]</p>
+    </div>
+    <div>
+        <button @click="likePost(post)" :class="[post.liked ? 'btn-l unlike' : 'btn-l like']">
+            <img src="{{url_for('static', filename='images/like.png')}}">
+        </button>
+        <label class="likes">[[post.likes]]</label>
+        <label class="date">[[post.date]]</label>
+        <label class="author">[[post.author]]</label>
+    </div>
+</div>

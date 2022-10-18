@@ -1,0 +1,390 @@
+
+/* Main styles */
+
+a, p, label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Styles for login block */
+
+#login-block{
+    position: absolute;
+    top: 180px;
+    background: #C9E7F9;
+    left: 35%;
+    right: 35%;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%)
+}
+
+#header-login-block{
+    display: block;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.login-warning{
+    background: #f05858; 
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.flashed-message{
+    display: block; 
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.login-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.login-input{
+    background: #FEF8ED; 
+    border-radius: 25px;
+    height: 25px;
+    width: calc(100% - 10px);
+    font-size: 18px;
+    line-height: 29px;
+    
+}
+
+#login-submit{
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+    background: #69C7FC;
+    box-shadow: 0px 0px 25px rgba(55, 125, 230, 0.5);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0;
+}
+
+#login-submit:hover{
+    background: #3ab6fd;
+}
+
+#login-form{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for header */
+
+#header{
+    position: absolute;
+    height: 133px;
+    left: 7.4%;
+    right: 7.4%;
+    top: 13px;
+    background: #C9E7F9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+#logo{
+    position: absolute;
+    height: 60px;
+    left: 2.38%;
+    right: 78.97%;
+    top: 37px;
+}
+
+#div-logo-img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    
+    background: #FEF8ED;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#div-logo-img img{
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 5px;
+    top: 6px;
+}
+
+
+#header-label{
+    position: absolute;
+    width: 237px;
+    height: 39px;
+    left: 68px;
+    top: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+
+#div-info{
+    position: absolute;
+    height: 34px;
+    left: 35%;
+    right: 50.%;
+    top: 53px;
+}
+
+#div-info label{
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.dropdown-arrow{
+    position: relative;
+    width: 20px;
+    top: 3px;
+}
+
+#dropdown-info{
+    display: none;
+    position: absolute;
+    background: #FEF8ED;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    width: 25rem;
+    padding: 10px;
+    z-index: 1;
+}
+
+#dropdown-info p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#div-info:hover #dropdown-info {display: block;}
+
+/* Styles for footer */
+
+#bottom{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 800px;
+    height: 169px;
+    background: #C9E7F9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#div-authors{
+    position: absolute;
+    height: 77px;
+    left: 8.49%;
+    top: 29px;
+}
+
+#div-code{
+    position: absolute;
+    height: 130px;
+    left: 33.59%;
+    top: 29px;
+}
+
+#div-contacts{
+    position: absolute;
+    height: 131px;
+    left: 67.34%;
+    top: 29px;
+}
+
+.bottom-header{
+    width: 102px;
+    height: 25px;
+    left: 0px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.bottom-label{
+    position: absolute;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+#first-author{
+    position: absolute;
+    width: 180px;
+    height: 29px;
+    left: 0px;
+    top: 48px;
+}
+
+#bottom img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    left: 0px;
+    top: 0px;
+}
+
+#div-account{
+    position: absolute;
+    width: 253.95px;    
+    height: 54px;
+    right: 78.12px;
+    top: 40px;
+}
+
+#div-img-account{
+    display: inline-block;
+    background: #FEF8ED;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    margin: 5px;
+}
+
+
+#img-account{
+    position: relative;
+    width: 40px;
+    left: 2px;
+    top: 2px;
+}
+
+#div-account a{
+    font-size: 28px;
+    line-height: 34px;
+    margin: 5px;
+}
+
+
+#create-post-block{
+    position: absolute;
+    top: 180px;
+    background: #C9E7F9;
+    left: 7.4%;
+    right: 7.4%;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%)
+}
+
+.create-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.create-input{
+    background: #FEF8ED; 
+    border-radius: 25px;
+    height: 25px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.create-input-text{
+    background: #FEF8ED; 
+    border-radius: 25px;
+    height: 100px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.enter-submit{
+    display: block;
+    width: 50%;
+    height: 40px;
+    margin-top: 10px;
+    background: #69C7FC;
+    box-shadow: 0px 0px 25px rgba(55, 125, 230, 0.5);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0;
+}
+
+.enter-submit:hover{
+    background: #3ab6fd;
+}
+
+
+#div-account label{
+    font-size: 28px;
+    line-height: 34px;
+    margin: 5px;
+}
+
+
+#dropdown-account{
+    display: none;
+    position: absolute;
+    background: #FEF8ED;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+}
+
+#dropdown-account button, #dropdown-account label{
+    font-size: 18px;
+    line-height: 22px;  
+}
+
+#dropdown-account button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#dropdown-account a{
+    font-size: 18px;
+    line-height: 22px;
+    writing-mode: horizontal-tb !important;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+#dropdown-account a{
+    margin-left: 5px;
+}
+
+#div-account:hover #dropdown-account {display: inline-flex;}

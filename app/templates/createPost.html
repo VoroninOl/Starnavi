@@ -1,0 +1,51 @@
+
+{% extends 'mainBase.html' %}
+
+
+{% block addButtons %}
+    <div id="div-account">
+        <div style="display: flex; align-items: center;">
+            <div id="div-img-account">
+                <img id="img-account" src="{{url_for('static', filename='images/account.png')}}">
+            </div>
+                <label>Account</label>
+                <img class="dropdown-arrow" src="{{url_for('static', filename='images/arrow-down.png')}}">
+        </div>
+        <div id="dropdown-account">
+            <label id="username">{{username}}</label>
+            <a href="/">Main Page</a>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block mainPlace %}
+    <div id="create-post-block">
+        <label id="header-login-block">Please, fill fields!</label>
+        <div id="div-warnings">
+            <div v-if="warningMessages.length > 0" class="login-warning">
+                <label v-for="message in warningMessages" class="flashed-message">[[message]]</label>
+            </div>
+        </div>
+        <div id="login-form">
+            <table style="width: 100%;">
+                <tr class="space">
+                    <td><label class="create-item">Header:</label></td>
+                    <td><input class="create-input" type="text" name="header" placeholder="Header"></td>
+                </tr>
+                <tr class="space">
+                    <td><label class="create-item">Content: </label></td>
+                    <td><textarea class="create-input-text" type="text" name="content" placeholder="Content"></textarea></td>
+                </tr>
+                <tr class="space">
+                    <td colspan="2"><input type="submit" class="enter-submit" id="create-post-submit" value="Login" ></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{url_for('static', filename='js/create_post.js')}}"></script>
+{% endblock %}
